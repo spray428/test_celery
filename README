@@ -6,3 +6,7 @@ celery -A test_celery worker -l info
 
 打开终端2：
 python -m test_celery.run_tasks
+
+
+参考资料：
+https://tests4geeks.com/python-celery-rabbitmq-tutorial/
