@@ -1,0 +1,8 @@
+需要配置rabbitmq,如果是默认安装，修改celery.py中broker和backend内容为：
+amqp://admin:admin@localhost:5672
+
+打开终端1：
+celery -A test_celery worker -l info
+
+打开终端2：
+python -m test_celery.run_tasks
