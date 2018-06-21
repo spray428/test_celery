@@ -10,3 +10,8 @@ python -m test_celery.run_tasks
 
 参考资料：
 https://tests4geeks.com/python-celery-rabbitmq-tutorial/
+
+注意事项：
+1: celery 从3.x 和4.x 有很大的差别的，尤其是用rabbitmq时，4.x不需要单独安装rabbitmq库，直接使用pip install celery即可
+2：celery的版本要和kombu 版本保持一致，否则会报错，对应关系celery 4.1.0 ---> kombu 4.1.0
+   celery 4.2.0  ---> kombu 4.2.1
